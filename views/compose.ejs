@@ -1,0 +1,16 @@
+<%- include("partials/header") -%>
+
+<h1>写点什么吧！</h1>
+<form action="/compose" method="post">
+    <div class="mb-3">
+        <label class="form-label" for="title">取个标题儿</label>
+        <input class="form-control" type="text" name="title" autofocus autocomplete="off">
+    </div>
+    <div class="mb-3">
+        <label class="form-label" for="content">以下是正文内容</label>
+        <textarea class="form-control" name="content" id="" cols="30" rows="10" autocomplete="off"></textarea>
+    </div>
+    <button class="btn btn-lg btn-primary" type="submit">发布</button>
+</form>
+
+<%- include("partials/footer") -%>
